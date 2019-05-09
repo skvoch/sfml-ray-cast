@@ -19,10 +19,10 @@ CONFIG += link_pkgconfig
 PKGCONFIG += sfml-all
 
 SOURCES += \
-        main.cpp \
-    RayEngine.cpp \
-    Player.cpp \
-    GameInstance.cpp
+        src/main.cpp \
+        src/RayEngine.cpp \
+        src/Player.cpp \
+        src/GameInstance.cpp
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -30,7 +30,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
-    RayEngine.h \
-    Utils.h \
-    Player.h \
-    GameInstance.h
+    src/RayEngine.h \
+    src/Utils.h \
+    src/Player.h \
+    src/GameInstance.h
