@@ -11,7 +11,7 @@
 class GameInstance
 {
 public:
-    /// \param [in] wWindow width
+    /// \param [in] Window width
     /// \param [in] Window height
     /// \param [in] Player pov
     GameInstance(uint width, uint height, int pov);
